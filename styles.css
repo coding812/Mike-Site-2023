@@ -1,0 +1,46 @@
+body
+{
+    background-color: black;
+}
+
+/************************** NAVBAR ******************************/
+/* Navbar background */
+.topnav 
+{
+    background-color: #000000;
+    overflow: hidden;
+}
+    
+/* links inside the navigation bar */
+.topnav a 
+{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    
+/* links on hover */
+a 
+{
+    box-shadow: inset #1b0275;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .35s ease-in-out, box-shadow .35s ease-in-out;
+}
+a:hover 
+{
+    box-shadow: inset 0px -60px 0 0 #1b0275;
+    color: white;   
+}
+    
+/* active page */
+.topnav a.active 
+{
+    background-color: #1b0275;
+    color: white;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ NAVBAR ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
