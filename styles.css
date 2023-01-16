@@ -1,46 +1,107 @@
+html 
+{
+    scroll-behavior: smooth;
+}
 body
 {
-    background-color: black;
+    padding-top: 13px;
+    margin: 0px;
+    background-color: #343a40;
+}
+h1
+{
+    color: #FFF;
+    margin-top: 100%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+}
+h2
+{
+    color: #FFF;
+    font: Raleway;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+h3
+{
+    color: aquamarine;
+    text-align: center;
+}
+indent {
+    text-indent: 30px;
 }
 
-/************************** NAVBAR ******************************/
-/* Navbar background */
-.topnav 
+/*********      NAV BAR      **********/
+
+div.container
 {
-    background-color: #000000;
-    overflow: hidden;
+    margin: 0 auto;
+    width: 500px;
+	padding: 3em 3em;
+	text-align: center;
 }
-    
-/* links inside the navigation bar */
-.topnav a 
+div.container a
 {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    color: #FFF;
     text-decoration: none;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
 }
-    
-/* links on hover */
-a 
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, 
+div.topBotomBordersOut a:after
 {
-    box-shadow: inset #1b0275;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .35s ease-in-out, box-shadow .35s ease-in-out;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.4s;
 }
-a:hover 
+
+div.topBotomBordersOut a:before
 {
-    box-shadow: inset 0px -60px 0 0 #1b0275;
-    color: white;   
+    top: 0px;
+    transform: translateY(10px);
 }
-    
-/* active page */
-.topnav a.active 
+
+div.topBotomBordersOut a:after
 {
-    background-color: #1b0275;
-    color: white;
+    bottom: 0px;
+    transform: translateY(-10px);
 }
-/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ NAVBAR ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+div.topBotomBordersOut a:hover:before, 
+div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/****************************************/
+
+
+
+#profilePic
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#sticky
+{
+    position: sticky;
+    top: 0;
+}
