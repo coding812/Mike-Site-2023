@@ -4,7 +4,7 @@ html
 }
 body
 {
-    padding-top: 13px;
+    padding-top: 5%;
     margin: 0px;
     background-color: #343a40;
 }
@@ -21,7 +21,7 @@ h2
     font: Raleway;
     text-align: center;
     display: block;
-    margin-top: 50px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
@@ -33,7 +33,7 @@ h3
 }
 p.indent 
 {
-    text-indent: 80px;
+    text-indent: 10%;
     color: aquamarine;
     font-size: 125%;
     padding-left: 10%;
@@ -46,7 +46,7 @@ p.indent
 div.container
 {
     margin: 0 auto;
-    width: 500px;
+    width: 100%;
 	padding: 3em 3em;
 	text-align: center;
 }
