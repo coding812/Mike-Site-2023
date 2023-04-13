@@ -12,7 +12,7 @@ h1
 {
     color: #FFF;
     margin-top: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     margin-left: 5%;
 }
 h2
@@ -129,4 +129,11 @@ div.topBotomBordersOut a:hover:after
     width: 50%;
     padding: 10px;
 }
-  
+.contacts
+{
+    max-width: 75px;
+    margin-top: px;
+    margin-bottom: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
